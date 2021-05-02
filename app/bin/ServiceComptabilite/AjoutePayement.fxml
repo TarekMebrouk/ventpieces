@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="576.0" prefWidth="1000.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServiceComptabilite.ControlerAjoutePayement">
+   <children>
+      <Label layoutX="58.0" layoutY="26.0" prefHeight="35.0" prefWidth="289.0" text="Ajoute d'un payement :" textFill="#e7e5e5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="323.0" layoutY="84.0" prefHeight="441.0" prefWidth="551.0">
+         <children>
+            <Pane prefHeight="229.0" prefWidth="551.0">
+               <children>
+                  <Label layoutX="67.0" layoutY="14.0" prefHeight="17.0" prefWidth="154.0" text="Date Payement :" textFill="WHITE" />
+                  <DatePicker fx:id="datePayement" layoutX="67.0" layoutY="40.0" prefHeight="25.0" prefWidth="224.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="231.0" prefWidth="551.0">
+               <children>
+                  <Label layoutX="64.0" layoutY="14.0" prefHeight="17.0" prefWidth="104.0" text="montant :" textFill="WHITE" />
+                  <Button layoutX="367.0" layoutY="139.0" mnemonicParsing="false" onAction="#insertPayement" prefHeight="25.0" prefWidth="111.0" text="Ajouté Payement " />
+                  <TextField fx:id="montant" layoutX="64.0" layoutY="60.0" prefHeight="25.0" prefWidth="224.0" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Pane layoutX="13.0" layoutY="93.0" prefHeight="321.0" prefWidth="338.0">
+         <children>
+            <Label layoutX="49.0" layoutY="21.0" prefHeight="17.0" prefWidth="169.0" text="information sur la facture :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="78.0" prefHeight="20.0" prefWidth="91.0" text="date Facture :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="119.0" prefHeight="20.0" prefWidth="104.0" text="date Echeance :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="161.0" prefHeight="20.0" prefWidth="127.0" text="date Relancement :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="204.0" prefHeight="20.0" prefWidth="111.0" text="montant totale :" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateFacture" layoutX="129.0" layoutY="78.0" prefHeight="20.0" prefWidth="176.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateEcheance" layoutX="136.0" layoutY="119.0" prefHeight="20.0" prefWidth="176.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateRelance" layoutX="149.0" layoutY="161.0" prefHeight="20.0" prefWidth="176.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="montant_tot" layoutX="136.0" layoutY="204.0" prefHeight="20.0" prefWidth="185.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

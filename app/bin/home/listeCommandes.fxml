@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="576.0" prefWidth="1000.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.ControlerListeCommandes">
+   <children>
+      <Label layoutX="57.0" layoutY="25.0" prefHeight="35.0" prefWidth="274.0" text="Liste des Commandes" textFill="#e7e5e5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="175.0" prefHeight="45.0" prefWidth="934.0" spacing="80.0" style="-fx-background-color: #02030A;">
+         <children>
+            <Label prefHeight="17.0" prefWidth="105.0" text="Numero Arrive" textFill="#e7e5e5">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Label>
+            <Label text="date Arrive" textFill="#e7e5e5">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label text="etat Commande" textFill="#e7e5e5">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label text="Code Client" textFill="#e7e5e5">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label text="Nom Client" textFill="#e7e5e5">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Label text="Prenom Client">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#e7e5e5" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </HBox>
+      <ScrollPane layoutX="14.0" layoutY="232.0" prefHeight="320.0" prefWidth="970.0" stylesheets="@style.css">
+         <content>
+            <VBox fx:id="pnItemsCommande" prefHeight="318.0" prefWidth="970.0" spacing="5.0" style="-fx-background-color: #02030A;">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

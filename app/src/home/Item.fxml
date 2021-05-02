@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="1105.0" spacing="5.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.ControlerItemClient">
+    <children>
+      <Button fx:id="editClient" mnemonicParsing="false" onAction="#ClientInfo" prefHeight="27.0" prefWidth="45.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@style.css" text="edit" />
+        <Label fx:id="codeClient" prefHeight="17.0" prefWidth="49.0" text="100" textFill="#b7c3d7">
+         <padding>
+            <Insets left="20.0" />
+         </padding></Label>
+        <Label fx:id="nomC" prefHeight="17.0" prefWidth="148.0" text="Mebrouk" textFill="#b7c3d7">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Label>
+        <Label fx:id="prenomC" prefHeight="17.0" prefWidth="145.0" text="Tarek" textFill="#b7c3d7">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Label>
+        <Label fx:id="raisonSociale" prefHeight="17.0" prefWidth="165.0" text="Employé" textFill="#b7c3d7">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Label>
+      <Label fx:id="adress" prefHeight="25.0" prefWidth="230.0" text="Ouled Fayet,Alger" textFill="#b7c3d7" />
+      <Label fx:id="numeroTel" prefHeight="17.0" prefWidth="78.0" text="0561272077" textFill="#b7c3d7" />
+      <Label fx:id="etatClient" prefHeight="17.0" prefWidth="213.0" text="facture non payé" textFill="#b7c3d7">
+         <HBox.margin>
+            <Insets left="5.0" />
+         </HBox.margin></Label>
+    </children>
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+   <padding>
+      <Insets left="5.0" />
+   </padding>
+</HBox>

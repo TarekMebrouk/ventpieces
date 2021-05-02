@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="576.0" prefWidth="1000.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServiceMagasinier.ControlerAjouteBonLivraison">
+   <children>
+      <Label layoutX="57.0" layoutY="25.0" prefHeight="35.0" prefWidth="365.0" text="Ajoute d'un Bon de Livraison " textFill="#e7e5e5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="118.0" prefHeight="35.0" prefWidth="139.0" text="DateBon :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="296.0" prefHeight="35.0" prefWidth="90.0" text="Poid :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="548.0" layoutY="118.0" prefHeight="35.0" prefWidth="188.0" text="Nombre de Colis :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="531.0" layoutY="296.0" prefHeight="35.0" prefWidth="188.0" text="nom du Préparateur :" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateBon" layoutX="222.0" layoutY="123.0" prefHeight="35.0" prefWidth="214.0" />
+      <TextField fx:id="poid" layoutX="222.0" layoutY="301.0" prefHeight="35.0" prefWidth="221.0" />
+      <TextField fx:id="nbColis" layoutX="719.0" layoutY="118.0" prefHeight="35.0" prefWidth="221.0" />
+      <TextField fx:id="nomPreparateur" layoutX="719.0" layoutY="301.0" prefHeight="35.0" prefWidth="221.0" />
+      <Button layoutX="548.0" layoutY="439.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="35.0" prefWidth="90.0" text="Ajouté">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

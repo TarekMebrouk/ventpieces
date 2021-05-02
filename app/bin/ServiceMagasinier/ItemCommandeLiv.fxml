@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="971.0" spacing="35.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServiceMagasinier.ControlerItemCommandeMagasinier">
+   <effect>
+      <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+   </effect>
+   <padding>
+      <Insets left="5.0" />
+   </padding>
+   <children>
+      <Pane prefHeight="190.0" prefWidth="323.0">
+         <children>
+            <Label layoutX="14.0" layoutY="60.0" prefHeight="17.0" prefWidth="129.0" text="Date Commande :" textFill="#e7e4e6" />
+            <Label layoutX="18.0" layoutY="22.0" prefHeight="17.0" prefWidth="85.0" text="numero Arrive : " textFill="#ffffffe8" />
+            <Label fx:id="numeroArrive" layoutX="116.0" layoutY="22.0" prefHeight="10.0" prefWidth="170.0" textFill="WHITE" />
+            <Label layoutX="18.0" layoutY="104.0" prefHeight="17.0" prefWidth="98.0" text="etat Commande :" textFill="WHITE" />
+            <Button fx:id="edit" layoutX="14.0" layoutY="151.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="64.0" text="edit" />
+            <Label layoutX="147.0" layoutY="56.0" prefHeight="25.0" prefWidth="180.0" textFill="WHITE" />
+            <Label fx:id="dateArrive" layoutX="132.0" layoutY="60.0" prefHeight="17.0" prefWidth="180.0" textFill="WHITE" />
+            <Label fx:id="etatCommande" layoutX="116.0" layoutY="104.0" prefHeight="17.0" prefWidth="180.0" textFill="WHITE" />
+            <Button fx:id="modify" layoutX="116.0" layoutY="151.0" mnemonicParsing="false" onAction="#Modify" prefHeight="25.0" prefWidth="180.0" text="modifié Quantité Commandé" />
+         </children>
+      </Pane>
+      <Pane prefHeight="190.0" prefWidth="272.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="142.0" text="Quantité Commandée :" textFill="WHITE" />
+            <Label layoutX="7.0" layoutY="78.0" prefHeight="17.0" prefWidth="129.0" text="Nom Client :" textFill="WHITE" />
+            <Label layoutX="7.0" layoutY="122.0" prefHeight="17.0" prefWidth="129.0" text="prenom Client :" textFill="WHITE" />
+            <Label fx:id="prenom" layoutX="100.0" layoutY="122.0" prefHeight="17.0" prefWidth="142.0" textFill="WHITE" />
+            <Label fx:id="nom" layoutX="86.0" layoutY="78.0" prefHeight="17.0" prefWidth="158.0" textFill="WHITE" />
+            <TextField fx:id="Qte_command" layoutX="25.0" layoutY="39.0" prefHeight="17.0" prefWidth="149.0" />
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="350.0">
+         <children>
+            <Label layoutX="14.0" layoutY="13.0" prefHeight="25.0" prefWidth="129.0" text="Reference du Produit : " textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="47.0" prefHeight="25.0" prefWidth="142.0" text="designation du Produit : " textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="83.0" prefHeight="25.0" prefWidth="129.0" text="prix du Produit : " textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="124.0" prefHeight="25.0" prefWidth="129.0" text="Quantité en stock :" textFill="WHITE" />
+            <Label fx:id="reference" layoutX="175.0" layoutY="17.0" prefHeight="17.0" prefWidth="158.0" textFill="WHITE" />
+            <Label fx:id="designation" layoutX="175.0" layoutY="51.0" prefHeight="17.0" prefWidth="158.0" textFill="WHITE" />
+            <Label fx:id="prix" layoutX="175.0" layoutY="87.0" prefHeight="17.0" prefWidth="158.0" textFill="WHITE" />
+            <Label fx:id="Qte_Stock" layoutX="167.0" layoutY="128.0" prefHeight="17.0" prefWidth="158.0" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</HBox>
