@@ -27,22 +27,22 @@ The software in question will be used by 3 workstations of the company:
 <H3> Software screens : </H3>
 <ol>
  <li> <H4> Commercial service </H4> </li> 
-      <img src="screens/commercial-1.PNG">
-      <img src="screens/commercial-2.PNG">
-      <img src="screens/commercial-3.PNG">
-      <img src="screens/commercial-4.PNG">
-      <img src="screens/commercial-5.PNG">
-      <img src="screens/commercial-6.PNG">
-      <img src="screens/commercial-7.PNG">
-      <img src="screens/commercial-8.PNG">
-      <img src="screens/commercial-9.PNG">
-      <img src="screens/commercial-10.PNG">
-      <img src="screens/commercial-11.PNG">
+      <img src="screens/commercial-1.png">
+      <img src="screens/commercial-2.png">
+      <img src="screens/commercial-3.png">
+      <img src="screens/commercial-4.png">
+      <img src="screens/commercial-5.png">
+      <img src="screens/commercial-6.png">
+      <img src="screens/commercial-7.png">
+      <img src="screens/commercial-8.png">
+      <img src="screens/commercial-9.png">
+      <img src="screens/commercial-10.png">
+      <img src="screens/commercial-11.png">
  <li> <H4> Accounting Service </H4> </li> 
-      <img src="screens/accounting-1.PNG">
-      <img src="screens/accounting-2.PNG">
-      <img src="screens/accounting-3.PNG">
+      <img src="screens/accounting-1.png">
+      <img src="screens/accounting-2.png">
+      <img src="screens/accounting-3.png">
  <li> <H4> The storekeeper </H4> </li> 
-      <img src="screens/payment-1.PNG">
-      <img src="screens/payment-2.PNG">
+      <img src="screens/payment-1.png">
+      <img src="screens/payment-2.png">
 </ol>
